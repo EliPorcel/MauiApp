@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.AcercaPage"
+             Title="AcercaPage">
+
+    <VerticalStackLayout Margin="10" BackgroundColor="#373940">
+
+        <Label 
+              Margin="0,20,0,20"
+              TextColor="#5865f2"
+              Text="Soy Eliana, gracias por visitar mi app"
+              FontSize="Medium"
+              VerticalOptions="Center" 
+              HorizontalOptions="Center" />
+
+        <Image Source="acercade.png"
+               WidthRequest="150"
+               Margin="0,20,0,30"/>
+
+        <Label Text="Soy Eliana, trabajo en SEO y soy estudiante de Desarrollo de Software."  
+               TextColor="White" 
+               HorizontalOptions="Center"
+               WidthRequest="300"
+               Margin="0,20,0,0"/>
+
+        <Label Text="¡Puedo ayudarte a convertir tus ideas en realidad! ¡¡Contactame!!"    
+               TextColor="White" 
+               HorizontalOptions="Center"
+               WidthRequest="300"
+               Margin="0,0,0,50"/>
+
+        <Label Text="elianaporcel.ar@gmail.com" 
+               TextColor="White" 
+               HorizontalOptions="Center" />
+
+        <Label Text="02954-216180" 
+               TextColor="White" 
+               HorizontalOptions="Center" />
+
+        <Label Text="Santa Rosa - La Pampa - 2024" 
+               TextColor="White" 
+               HorizontalOptions="Center" />
+
+        <Button Text="Volver" 
+                Margin="0,20" 
+                x:Name="btnAcercaVolver" 
+                Clicked="btnAcercaVolver_Clicked" 
+                WidthRequest="200"
+                Background="#ee459e" 
+                TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>

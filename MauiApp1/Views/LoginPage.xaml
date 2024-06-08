@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.LoginPage"
+             Background="Azure"
+             
+             Title="LoginPage">
+
+    <VerticalStackLayout Margin="10" 
+                         BackgroundColor="#373940">
+
+        <Image Source="login.png" 
+               Margin="0,20" />
+
+        <Label 
+            TextColor="white"
+            FontAttributes="Bold"
+            Text="¡Bienvenidx!"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            Margin="0,0,0,10"/>
+
+        <Label 
+            Text="E-mail" 
+            TextColor="White" 
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,0,0,2"/>
+
+        <Entry   
+            Keyboard="Email"
+            TextColor="AntiqueWhite" 
+            x:Name="entLoginEmail"
+            Placeholder="nombre@correo.com" 
+            HorizontalOptions="Center"
+            WidthRequest="200"
+            Margin="0,0,0,6"/>
+
+        <Label Text="Contraseña" 
+               TextColor="White" 
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,0,0,2"/>
+
+        <Entry 
+            Keyboard="Numeric"
+            x:Name="entLoginPassword"
+            Placeholder="123456" 
+            IsPassword="True" 
+            TextColor="AntiqueWhite" 
+            HorizontalOptions="Center"
+            WidthRequest="200"
+            Margin="0,0,0,10"/>
+
+        <Button 
+            TextColor="WhiteSmoke"
+            BackgroundColor="#5865f2"
+            Text="INGRESAR" 
+            x:Name="btnLoginIngresar" 
+            Clicked="btnLoginIngresar_Clicked" 
+            Margin="10,20"
+            WidthRequest="220"/>
+
+        <ActivityIndicator />
+
+        <Label Text="ITES - 2024" 
+               TextColor="AntiqueWhite" 
+               HorizontalOptions="Center" 
+               FontSize="Micro" />
+
+    </VerticalStackLayout>
+</ContentPage>
